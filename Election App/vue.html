@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Assignment3</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="src/electionApp.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>Election App</h1>
+        
+    </div>
+    
+    <script type = "text/javascript">
+        var app = new Vue ({ //eslint-disable-line no-unused-vars, no-undef
+        el: '#app',
+        data: {
+            newTitle: '',
+            newAge: '',
+            newId: '',
+            hasVotes: false,
+            theBallot: new Ballot()
+        },
+        methods: {
+            addVote: function () {
+                this.theBallot.addVote(this.newTitle, this.newAge, this.newId)
+                this.hasVotes = true
+                this.newTitle = ''
+                this.newAge = ''
+                this.newId = ''
+            },
+            getVotes: function () {
+                return this.theBallot.allMyVotes
+            }
+        }
+    })
+    </script>
+</body>
+</html>
+       
+    
+
+
+		
+

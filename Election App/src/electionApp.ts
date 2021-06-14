@@ -1,7 +1,14 @@
 const STORAGE_KEY = 'electionApp'; //default values
 
+interface IVote {
+    id : number 
+    title : string
+    age : number
+    completed : boolean
+}
+
 // add part
-class Vote { // eslint-disable-line no-unused- vars
+class Vote implements IVote { // eslint-disable-line no-unused- vars
     id : number 
     title : string
     age : number
@@ -138,7 +145,7 @@ class Ballot { // eslint-disable-line no-unused- vars
     }
 
     // find a part given a search
-    findVote(targetTitle : string) : string{
+    findVote(targetTitle : string) : any{
         return this.allMyVotes.find((vote) => vote.title === targetTitle);
     }
 }
