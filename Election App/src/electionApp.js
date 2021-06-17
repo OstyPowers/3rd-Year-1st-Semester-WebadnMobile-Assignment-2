@@ -1,5 +1,6 @@
 const STORAGE_KEY = 'electionApp'; //default values
 
+
 // add part
 class Vote { // eslint-disable-line no-unused- vars
     constructor(newId, newTitle, newAge) {
@@ -45,13 +46,13 @@ class Ballot { // eslint-disable-line no-unused- vars
 
     // add part
     addVote(newTitle, newAge = 18) { //default value
-        newTitle = newTitle.trim();
-        if (!newTitle) {
+        let anewTitle = newTitle.trim();
+        if (!anewTitle) {
             return;
         }
         const newId = this.allMyVotes.length + 1; // provide default values
-        const aNewVote = new Vote(newId, newTitle, newAge);
-        this.allMyVotes.push(aNewVote);
+        const NewVote = new Vote(newId, anewTitle, newAge);
+        this.allMyVotes.push(NewVote);
     }
 
     // a calculation across many parts
@@ -117,12 +118,23 @@ class Ballot { // eslint-disable-line no-unused- vars
     }
 
     //sort parts
-    sortVotes() {
+    sortVotesAscending() {
         this.allMyVotes.sort(function(a, b) {
             if (a.title < b.title) {
                 return -1;
             }
             if (a.title > b.title) {
+                return 1;
+            }
+            return 0;
+        });
+    }
+    sortVotesDec() {
+        this.allMyVotes.sort(function(a, b) {
+            if (a.title > b.title) {
+                return -1;
+            }
+            if (a.title < b.title) {
                 return 1;
             }
             return 0;

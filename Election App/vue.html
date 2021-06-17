@@ -8,13 +8,32 @@
 </head>
 
 <body>
+    <section id="app">
+        <div id="input">
+            <h1>Election App</h1>
+            <!-- <select id="name" v-model="newTitle">
+                <option disabled value="">Select Party Vote</option>
+                <option>National</option>
+                <option>Labour</option>
+                <option>Green</option>
+            </select> -->
 
-    <div id="app">
-        <h1>Election App</h1>
-        
-    </div>
-    
-    <script type = "text/javascript">
+            <input id="name" v-model="newTitle" placeholder="Insert Party vote here"></input>
+            <input id="age" v-model="newAge" placeholder="What is your age?"></input>
+            <input id="add" type="button" value="add"  v-on:click="addVote"></input>
+           
+        </div>
+        <!--script>console.log(this.allMyVotes)</script-->
+        <output id="output"  v-if="hasVotes">
+        <ul>
+            <li v-for="vote in getVotes()">{{vote.title}} voter age {{vote.age}} voter id {{vote.id}}</li>
+        </ul>
+        </output>
+        <input id="add" type="button" value="sort ^"  v-on:click="sortVotesAsc"></input>
+        <input id="add" type="button" value="sort v"  v-on:click="sortVotesDec"></input>
+    </section>
+
+    <script>
         var app = new Vue ({ //eslint-disable-line no-unused-vars, no-undef
         el: '#app',
         data: {
@@ -26,7 +45,7 @@
         },
         methods: {
             addVote: function () {
-                this.theBallot.addVote(this.newTitle, this.newAge, this.newId)
+                this.theBallot.addVote(this.newTitle, this.newAge)
                 this.hasVotes = true
                 this.newTitle = ''
                 this.newAge = ''
@@ -34,6 +53,12 @@
             },
             getVotes: function () {
                 return this.theBallot.allMyVotes
+            },
+            sortVotesAsc: function(){
+                this.theBallot.sortVotesAscending()
+            },
+            sortVotesDec: function(){
+                this.theBallot.sortVotesDec()
             }
         }
     })
