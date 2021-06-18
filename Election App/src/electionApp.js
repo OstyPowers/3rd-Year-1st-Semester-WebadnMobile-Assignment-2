@@ -15,6 +15,7 @@ class Vote { // eslint-disable-line no-unused- vars
 class Ballot { // eslint-disable-line no-unused- vars
     constructor() {
         this.allMyVotes = [];
+        this.filteredVotes = [];
         this.editedItem = null;
         this.editedVoteIndex = null;
         this.beforeEditedTitle = '';
@@ -53,6 +54,7 @@ class Ballot { // eslint-disable-line no-unused- vars
         const newId = this.allMyVotes.length + 1; // provide default values
         const NewVote = new Vote(newId, anewTitle, newAge);
         this.allMyVotes.push(NewVote);
+        this.filteredVotes = this.allMyVotes
     }
 
     // a calculation across many parts

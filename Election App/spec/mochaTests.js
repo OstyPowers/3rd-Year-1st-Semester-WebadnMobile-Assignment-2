@@ -124,7 +124,7 @@ describe('Ballot', function() {
           theBallot.addVote('ACT')
           theBallot.addVote('Maori')
           theBallot.addVote('Labour')
-          theBallot.sortVotes()
+          theBallot.sortVotesAscending()
           const actualOrderedVoteTitles = getTitles(theBallot.allMyVotes);
           const expectedSortedVoteTitles = ['ACT', 'Green', 'Labour', 'Maori', 'National']
           expect(expectedSortedVoteTitles).to.deep.equal(actualOrderedVoteTitles)
