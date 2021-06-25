@@ -69,11 +69,11 @@ class Ballot { // eslint-disable-line no-unused- vars
 
     // a calculation within a part
     getAverageAge() {
-        let average = 0;
+        let total = 0;
         this.allMyVotes.forEach(vote => {
-            average += vote.age;
+            total += vote.age;
         });
-        average = average / this.allMyVotes.length;
+        let average = total / this.allMyVotes.length;
         return average;
     }
 

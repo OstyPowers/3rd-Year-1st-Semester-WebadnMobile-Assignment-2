@@ -31,6 +31,7 @@
             <li v-for="vote in getVotes()">{{vote.title}} voter age {{vote.age}} voter id {{vote.id}}</li>
         </ul>
         </output>
+        <p>Total Votes: {{ count }}</p>
         <input id="sort" type="button" value="Sort Ascending"  v-on:click="sortVotesAsc"></input>
         <input id="sort" type="button" value="Sort Descending"  v-on:click="sortVotesDec"></input>
         <br><br>
@@ -40,8 +41,8 @@
         <input id="filter" type="button" value="National votes" v-on:click="filterParty"></input>
         <input id="filter" type="button" value="No filter" v-on:click="removeFilter"></input>
         <br><br>
-        <!-- <input id="calc" type="button" value="Calc Aver" v-on:click="getAverage"></input> -->
-        <p>The average age of the voters is {{theBallot.getAverageAge()}}</p>
+        <input id="calc" type="button" value="Calculate Average Age" v-on:click="getAverage"></input>
+        <p>The average age of the voters is {{average}}</p>
     </section>
 
     <script>
@@ -51,6 +52,7 @@
             newTitle: '',
             newAge: '',
             newId: '',
+            count: 0,
             average: 0,
             targetVoteTitle: '',
             hasVotes: false,
@@ -58,11 +60,21 @@
         },
         methods: {
             addVote: function () {
-                this.theBallot.addVote(this.newTitle, this.newAge)
-                this.hasVotes = true
-                this.newTitle = ''
-                this.newAge = ''
-                this.newId = ''
+                
+                if(!Number.isInteger(parseInt(this.newAge))){
+                    alert("please enter a number")
+                }
+                else if(this.newAge > 17){
+                    this.theBallot.addVote(this.newTitle, parseInt(this.newAge))
+                    this.hasVotes = true
+                    this.newTitle = ''
+                    this.newAge = ''
+                    this.newId = ''
+                    this.count = this.theBallot.allMyVotes.length
+                }
+                else{
+                    alert("You're too young to vote, please lie about your age")
+                }
                 
             },
             getVotes: function () {
@@ -84,7 +96,10 @@
                 this.theBallot.save()
             },
             loadData: function() {
-                this.theBallot.load()
+                this.theBallot.allMyVotes = this.theBallot.load()
+                this.theBallot.filteredVotes = this.theBallot.load()
+                this.hasVotes = true
+                this.count = this.theBallot.allMyVotes.length
             },
             filterAgeYoung: function(){
                 this.theBallot.filteredVotes = this.theBallot.allMyVotes.filter(vote => vote.age<26)
@@ -96,10 +111,7 @@
                 this.theBallot.filteredVotes = this.theBallot.allMyVotes
             },
             getAverage: function() {
-                this.theBallot.getAverageAge()
-                let result = this.theBallot.getAverageAge()
-
-                this.average = result
+                this.average = this.theBallot.getAverageAge()
             }
             
         }
