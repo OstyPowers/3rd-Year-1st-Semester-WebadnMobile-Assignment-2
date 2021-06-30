@@ -35,6 +35,12 @@ class Ballot { // eslint-disable-line no-unused- vars
         });
     }
 
+    searchForVote(targetVoteTitle) {
+        const index = this.allMyVotes.findIndex(vote => vote.id == targetVoteTitle);
+        this.filteredVotes = [this.allMyVotes[index]]
+    }
+
+
     // load all parts from local storage
     load() {
         return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');

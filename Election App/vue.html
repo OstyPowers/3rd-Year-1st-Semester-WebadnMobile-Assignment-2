@@ -32,6 +32,8 @@
         </ul>
         </output>
         <p>Total Votes: {{ count }}</p>
+        <input id ="search" v-model="searchText" placeholder="Search"></input>
+        <input type="button" value="Search" v-on:click="searchVote"></input>
         <input id="sort" type="button" value="Sort Ascending"  v-on:click="sortVotesAsc"></input>
         <input id="sort" type="button" value="Sort Descending"  v-on:click="sortVotesDec"></input>
         <br><br>
@@ -56,6 +58,7 @@
             average: 0,
             targetVoteTitle: '',
             hasVotes: false,
+            searchText: '',
             theBallot: new Ballot()
         },
         methods: {
@@ -76,6 +79,9 @@
                     alert("You're too young to vote, please lie about your age")
                 }
                 
+            },
+            searchVote: function (){
+                this.theBallot.searchForVote(this.searchText)
             },
             getVotes: function () {
                 return this.theBallot.filteredVotes
