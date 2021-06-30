@@ -57,7 +57,8 @@ class Ballot { // eslint-disable-line no-unused- vars
         if (!anewTitle) {
             return;
         }
-        const newId = this.allMyVotes.length + 1; // provide default values
+        let lastVote = this.allMyVotes[this.allMyVotes.length - 1]
+        const newId = (lastVote) ? lastVote.id + 1  : 1  // provide default values
         const NewVote = new Vote(newId, anewTitle, newAge);
         this.allMyVotes.push(NewVote);
         this.filteredVotes = this.allMyVotes

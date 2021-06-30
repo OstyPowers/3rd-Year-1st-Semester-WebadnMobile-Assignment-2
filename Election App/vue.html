@@ -19,7 +19,8 @@
             </select> -->
             <input id="name" v-model="newTitle" placeholder="Insert Party vote here"></input>
             <input id="age" v-model="newAge" placeholder="What is your age?"></input>
-            <input id="add" type="button" value="add"  v-on:click="addVote"></input>
+            <input id="add" type="button" value="Add"  v-on:click="addVote"></input>
+            <input id="refresh" type="button" value="Refresh"  v-on:click="refreshUi"></input>
             <input id="name" v-model="targetVoteTitle" placeholder="Insert Party vote to remove"></input>
             <input id="remove" type="button" value="Delete"  v-on:click="deleteVote"></input>
             <input id="save" type="button" value="Save"  v-on:click="saveData"></input>
@@ -32,7 +33,7 @@
         </ul>
         </output>
         <p>Total Votes: {{ count }}</p>
-        <input id ="search" v-model="searchText" placeholder="Search"></input>
+        <input id ="search" v-model="searchText" placeholder="Search by id"></input>
         <input type="button" value="Search" v-on:click="searchVote"></input>
         <input id="sort" type="button" value="Sort Ascending"  v-on:click="sortVotesAsc"></input>
         <input id="sort" type="button" value="Sort Descending"  v-on:click="sortVotesDec"></input>
@@ -97,6 +98,10 @@
             },
             deleteVote: function(){
                 this.theBallot.removeVote(this.targetVoteTitle)
+                
+            },
+            refreshUi: function() {
+                this.count = this.theBallot.allMyVotes.length
             },
             saveData: function() {
                 this.theBallot.save()
