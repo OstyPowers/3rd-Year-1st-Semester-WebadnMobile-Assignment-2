@@ -1,0 +1,2284 @@
+{
+  "id": "cdd6ed8f-3d35-459d-aa84-6458e6287bea",
+  "version": "2.0",
+  "name": "ElectionAppUITests",
+  "url": "http://127.0.0.1/Election%20App/vue.html",
+  "tests": [{
+    "id": "4c578988-0dda-4583-be5d-1ef55aac576d",
+    "name": "Feature 1 Test",
+    "commands": [{
+      "id": "b0a5008f-300f-4add-a457-7d21bacfc850",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1250de74-87f9-4acd-8467-237872aa0c58",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6721475d-7870-4e4b-a9e5-df55821e5e0f",
+    "name": "Feature 2 Test",
+    "commands": [{
+      "id": "6a3a83c9-953b-4a15-b6f7-cf82fb95bf4f",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d233e91-3870-4ad6-b825-4c731cdcac22",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "461d9f50-6169-41ba-b1d3-38792b0e4b3f",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "National"
+    }, {
+      "id": "8c2f97e6-556d-4eb5-8962-37b94eec93b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "21"
+    }, {
+      "id": "968ecd20-e6bc-4844-a3cf-82b0df304f11",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50c6a973-a6b9-4ffd-b3e3-8b35e430e7c7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//section[@id='app']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Votes: 1')]", "xpath:innerText"]
+      ],
+      "value": "Total Votes: 1"
+    }, {
+      "id": "0fec405f-e14d-41a4-b71f-d4ce48d5d2d5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li",
+      "targets": [
+        ["css=li", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'National voter age 21 voter id 1')]", "xpath:innerText"]
+      ],
+      "value": "National voter age 21 voter id 1"
+    }, {
+      "id": "b3a86536-f000-4bb7-8518-e38b50083d4f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ace3e8ad-76f2-41d1-a3e3-9ed36f43afc0",
+    "name": "Feature 3 Test",
+    "commands": [{
+      "id": "797389ba-cd99-4047-bd77-8d1a27ff546b",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cb5c9d2-ab82-4eac-b35f-340925e4cecc",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc858d03-2a5c-49ab-b2ba-a6148547a3ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "National"
+    }, {
+      "id": "297d860e-b1cf-4ef1-ad87-3a5253c03c6c",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "32"
+    }, {
+      "id": "3dd2cdff-8cc6-4158-8d2b-ab3bb631658c",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdd1c137-6e2d-4e0f-bb25-bc02e7f5ce72",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Act"
+    }, {
+      "id": "81c1a482-685a-42bb-b77f-e1b545dad69f",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "21"
+    }, {
+      "id": "5466bea0-6b92-4d3c-b979-ebf4152576ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94094a44-969b-44a8-b09f-2023214f4e1e",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Labour"
+    }, {
+      "id": "3a3caa07-98fb-4d8d-a149-5698531a9840",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "19"
+    }, {
+      "id": "e383fa26-1233-487a-ad13-f66b9cc38f06",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c18570cd-ab57-4c9c-b4ef-90f90d976135",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Green"
+    }, {
+      "id": "f0faf4d8-d391-4f16-82fd-565292ae0072",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "35"
+    }, {
+      "id": "0e0c17ab-3347-47f7-a479-aa613fafd9c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7298cc71-45e7-45d1-9bd4-7b55331fe11f",
+      "comment": "",
+      "command": "click",
+      "target": "id=sort",
+      "targets": [
+        ["id=sort", "id"],
+        ["xpath=//input[@id='sort']", "xpath:attributes"],
+        ["xpath=//section[@id='app']/input[3]", "xpath:idRelative"],
+        ["xpath=//section/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ddf255d-580c-44f5-b099-ce50e86c74aa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Act voter age 21 voter id 2')]", "xpath:innerText"]
+      ],
+      "value": "Act voter age 21 voter id 2"
+    }, {
+      "id": "f2b39960-4298-4628-a7e9-eb569be38191",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2)",
+      "targets": [],
+      "value": "Green voter age 35 voter id 4"
+    }, {
+      "id": "c166046e-e774-4e9f-8180-b6d5de430981",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(3)",
+      "targets": [
+        ["css=li:nth-child(3)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Labour voter age 19 voter id 3')]", "xpath:innerText"]
+      ],
+      "value": "Labour voter age 19 voter id 3"
+    }, {
+      "id": "3891b2df-72a3-40ae-8e5a-aa3bd99183a4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(4)",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[4]", "xpath:idRelative"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'National voter age 32 voter id 1')]", "xpath:innerText"]
+      ],
+      "value": "National voter age 32 voter id 1"
+    }, {
+      "id": "3dad6e08-be22-4e03-986a-beb59805a01c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//input[@id='sort'])[2]",
+      "targets": [
+        ["xpath=(//input[@id='sort'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='app']/input[4]", "xpath:idRelative"],
+        ["xpath=//section/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d70e3012-17e1-42bc-937c-e5a54937426f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'National voter age 32 voter id 1')]", "xpath:innerText"]
+      ],
+      "value": "National voter age 32 voter id 1"
+    }, {
+      "id": "b6c92cbd-8133-439f-8ddc-844ea0fa1778",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Labour voter age 19 voter id 3')]", "xpath:innerText"]
+      ],
+      "value": "Labour voter age 19 voter id 3"
+    }, {
+      "id": "58e0447b-e353-4815-8beb-d1d599727342",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(3)",
+      "targets": [
+        ["css=li:nth-child(3)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Green voter age 35 voter id 4')]", "xpath:innerText"]
+      ],
+      "value": "Green voter age 35 voter id 4"
+    }, {
+      "id": "f7848c6a-fda6-4fbd-8be5-ff70de18ccee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(4)",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[4]", "xpath:idRelative"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Act voter age 21 voter id 2')]", "xpath:innerText"]
+      ],
+      "value": "Act voter age 21 voter id 2"
+    }, {
+      "id": "d5a46464-2dc3-4db4-9a85-d76c12dd487c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "860a727f-65a5-4c5b-9328-550fc6406df9",
+    "name": "Feature 4 Test",
+    "commands": [{
+      "id": "26f6e1d0-7868-4649-bac1-1fe1a94f805e",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c685b3b-dd64-44d2-83d7-d03b65706ff0",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ecd2a70-d2b9-47da-99e4-35543b9efc57",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "National"
+    }, {
+      "id": "4c846584-e392-433e-8e25-a5220278c2b9",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "21"
+    }, {
+      "id": "d775f03e-e637-45f0-a881-f4100b223b99",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ed4a164-6f53-4400-96f0-1b1e09123075",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Green"
+    }, {
+      "id": "0b05e254-b9f9-429f-b804-2f88fa5b8c47",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "30"
+    }, {
+      "id": "c13062a3-aaab-4339-b30c-2ff140237b02",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e88e0fcc-6be8-4a68-9aa7-cd6673621cc2",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Labour"
+    }, {
+      "id": "05b46853-2474-485c-8821-43af86dcf6b1",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "19"
+    }, {
+      "id": "33d95657-7ac8-47dd-8fcc-87991fd2e64c",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb64b456-142f-48b2-9c54-926b7d2b3763",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Act"
+    }, {
+      "id": "da118c06-468a-47bd-bfb6-81032c8a0c99",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "44"
+    }, {
+      "id": "d8177758-4d79-4dca-97ee-414c752a66ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "045730ef-ad16-426a-8a3f-cea67665d8ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "National"
+    }, {
+      "id": "d55f1a9a-85f9-4b29-bbaa-3729e25db203",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "27"
+    }, {
+      "id": "15aa2449-b7a1-424d-ab58-bde5045d8041",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da1ba1d5-1aaa-43ae-b7af-fbbfb34ac2a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=filter",
+      "targets": [
+        ["id=filter", "id"],
+        ["xpath=//input[@id='filter']", "xpath:attributes"],
+        ["xpath=//section[@id='app']/input[5]", "xpath:idRelative"],
+        ["xpath=//section/input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53a0741e-4705-41fd-95fb-9f84dc5dad9f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'National voter age 21 voter id 1')]", "xpath:innerText"]
+      ],
+      "value": "National voter age 21 voter id 1"
+    }, {
+      "id": "05fa4a81-d8dd-4b94-9602-fa5ae26a043d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Labour voter age 19 voter id 3')]", "xpath:innerText"]
+      ],
+      "value": "Labour voter age 19 voter id 3"
+    }, {
+      "id": "7579bd88-8807-4fda-b4b8-144c6413b2a6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//input[@id='filter'])[2]",
+      "targets": [
+        ["xpath=(//input[@id='filter'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='app']/input[6]", "xpath:idRelative"],
+        ["xpath=//section/input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd000cf6-acd6-4f02-8c86-278e89e69441",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'National voter age 21 voter id 1')]", "xpath:innerText"]
+      ],
+      "value": "National voter age 21 voter id 1"
+    }, {
+      "id": "cf7a7501-9133-4965-a00f-ad444df7b528",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'National voter age 27 voter id 5')]", "xpath:innerText"]
+      ],
+      "value": "National voter age 27 voter id 5"
+    }, {
+      "id": "139c1da7-a456-4839-a34c-dfe566e221f8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//input[@id='filter'])[3]",
+      "targets": [
+        ["xpath=(//input[@id='filter'])[3]", "xpath:attributes"],
+        ["xpath=//section[@id='app']/input[7]", "xpath:idRelative"],
+        ["xpath=//section/input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e14e381-7321-49cc-b44d-b8acbc0745fe",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'National voter age 21 voter id 1')]", "xpath:innerText"]
+      ],
+      "value": "National voter age 21 voter id 1"
+    }, {
+      "id": "2a9504e7-b674-4f29-a9e3-b015215f2dfa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Green voter age 30 voter id 2')]", "xpath:innerText"]
+      ],
+      "value": "Green voter age 30 voter id 2"
+    }, {
+      "id": "b02673b4-18f9-40f2-8262-e007410cf4a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(3)",
+      "targets": [
+        ["css=li:nth-child(3)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Labour voter age 19 voter id 3')]", "xpath:innerText"]
+      ],
+      "value": "Labour voter age 19 voter id 3"
+    }, {
+      "id": "9fcbc0c9-0792-42b0-b081-065bf5c9938c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(4)",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[4]", "xpath:idRelative"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Act voter age 44 voter id 4')]", "xpath:innerText"]
+      ],
+      "value": "Act voter age 44 voter id 4"
+    }, {
+      "id": "78bff7fb-934b-4726-a030-db32e6314d59",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(5)",
+      "targets": [
+        ["css=li:nth-child(5)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[5]", "xpath:idRelative"],
+        ["xpath=//li[5]", "xpath:position"],
+        ["xpath=//li[contains(.,'National voter age 27 voter id 5')]", "xpath:innerText"]
+      ],
+      "value": "National voter age 27 voter id 5"
+    }, {
+      "id": "831f540b-8b71-49b3-857c-724890ce2a12",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b81f2d94-3f50-43a0-a1bb-d5fb3ec27e30",
+    "name": "Feature 5 Test",
+    "commands": [{
+      "id": "c844e180-ce7d-4db1-b8c4-ca508605f286",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28b88aae-9889-4ffe-93f5-4fefa87d26af",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f29628bb-c1d3-42dc-9fd3-c0c5c4a440ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "National"
+    }, {
+      "id": "620771cf-f4ea-494c-9bcd-5483030d5c0b",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "6a8e6129-408d-4e9f-9e22-25c3c97dd19c",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d4007e9-880e-4c87-aa58-908013a2f00c",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Act"
+    }, {
+      "id": "efa22402-d3bc-478c-a74d-253d3e281325",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "35"
+    }, {
+      "id": "05b34caf-b5b9-4863-be2e-62738d7f5950",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0659713-dc87-403d-9a61-080b7a6c1219",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Labour"
+    }, {
+      "id": "dca201c1-3c67-42bc-8427-5f89adac58b4",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "19"
+    }, {
+      "id": "f50aa2af-5390-4ecb-a04b-6724195cd4bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84fd9214-149b-490a-9226-d809d443ce8f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'National voter age 22 voter id 1')]", "xpath:innerText"]
+      ],
+      "value": "National voter age 22 voter id 1"
+    }, {
+      "id": "a36a59fe-0e8a-45f5-a92b-c69df16c5184",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Act voter age 35 voter id 2')]", "xpath:innerText"]
+      ],
+      "value": "Act voter age 35 voter id 2"
+    }, {
+      "id": "b55ada01-c3c9-48d8-b09f-497ded8521bc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(3)",
+      "targets": [
+        ["css=li:nth-child(3)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Labour voter age 19 voter id 3')]", "xpath:innerText"]
+      ],
+      "value": "Labour voter age 19 voter id 3"
+    }, {
+      "id": "8f0a7bba-9aaa-4dcb-93a3-4e0473f12624",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//section[@id='app']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Votes: 3')]", "xpath:innerText"]
+      ],
+      "value": "Total Votes: 3"
+    }, {
+      "id": "5ed57d43-86d0-4bd1-b377-d3b567575166",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//input[@id='name'])[2]",
+      "targets": [
+        ["xpath=(//input[@id='name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71442eb3-df81-4471-8d5f-db83c7988b62",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='name'])[2]",
+      "targets": [
+        ["xpath=(//input[@id='name'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Act"
+    }, {
+      "id": "f4b3d36a-e3f9-4156-8125-69a704ff6bfe",
+      "comment": "",
+      "command": "click",
+      "target": "id=remove",
+      "targets": [
+        ["id=remove", "id"],
+        ["css=#remove", "css:finder"],
+        ["xpath=//input[@id='remove']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8a98bb7-274f-48f3-b375-d583dc17c59f",
+      "comment": "",
+      "command": "click",
+      "target": "id=refresh",
+      "targets": [
+        ["id=refresh", "id"],
+        ["css=#refresh", "css:finder"],
+        ["xpath=//input[@id='refresh']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e7e667e-10cf-4ce5-a9c6-b6faa8de7d16",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'National voter age 22 voter id 1')]", "xpath:innerText"]
+      ],
+      "value": "National voter age 22 voter id 1"
+    }, {
+      "id": "9bdbf226-abab-4c26-b1ae-e8ea13f2c794",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Labour voter age 19 voter id 3')]", "xpath:innerText"]
+      ],
+      "value": "Labour voter age 19 voter id 3"
+    }, {
+      "id": "49132ec8-4715-4f0b-b010-7cafd6616d3e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//section[@id='app']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Votes: 2')]", "xpath:innerText"]
+      ],
+      "value": "Total Votes: 2"
+    }, {
+      "id": "921c1de4-93d6-4dc8-ad96-407c59ce48dc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "dd9447e8-b487-435d-8b80-4da6c63c460b",
+    "name": "Feature 6 Test",
+    "commands": [{
+      "id": "a101ab4f-86d4-47bf-86dd-98e29f78366c",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "724716cb-545d-4c05-9ca5-7d326df47311",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fee660f-69f9-4cfb-8fc8-c32ec6eed6b6",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "National"
+    }, {
+      "id": "a3ed3f8f-8c3d-436a-bce1-a3b103c8dcfe",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "bf5a4718-6fa8-4276-93f7-b017b9130a9a",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb5824dc-f24d-406d-bc9c-64e1b0861ef6",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Green"
+    }, {
+      "id": "df604bea-94bc-4a58-b3b0-36a598d5be38",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "45"
+    }, {
+      "id": "32778aa3-7c47-46a9-b10e-361365af2e90",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3f5ebff-215a-4e17-9c73-2427b09e579b",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Labour"
+    }, {
+      "id": "14922d0f-875a-498b-82e3-60df1a23664f",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "19"
+    }, {
+      "id": "4e1e73f9-af17-4a9a-9521-a87f1f8bb298",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "998642f1-8e12-4584-94d9-04ba9d6810a6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'National voter age 22 voter id 1')]", "xpath:innerText"]
+      ],
+      "value": "National voter age 22 voter id 1"
+    }, {
+      "id": "11cacf71-a3ae-450b-90e3-9f99c8977196",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Green voter age 45 voter id 2')]", "xpath:innerText"]
+      ],
+      "value": "Green voter age 45 voter id 2"
+    }, {
+      "id": "3659c485-ad6d-4c53-b686-8ebb43cc06af",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(3)",
+      "targets": [
+        ["css=li:nth-child(3)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Labour voter age 19 voter id 3')]", "xpath:innerText"]
+      ],
+      "value": "Labour voter age 19 voter id 3"
+    }, {
+      "id": "af5d6b72-19a3-42ef-a75a-fa7d6761a458",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//section[@id='app']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Votes: 3')]", "xpath:innerText"]
+      ],
+      "value": "Total Votes: 3"
+    }, {
+      "id": "551f1eac-8238-4b0e-b2eb-1287b87cbc0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=save",
+      "targets": [
+        ["id=save", "id"],
+        ["css=#save", "css:finder"],
+        ["xpath=//input[@id='save']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec53798b-4aba-47b1-ba9b-f52a0014922c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e90db9f2-1ca7-4c9a-a7d2-9d18025a6193",
+    "name": "Feature 7 Test",
+    "commands": [{
+      "id": "bcc37dad-9ea4-4f14-9707-b04f16a10034",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26285fce-43f5-4f0f-9891-aa4eeddb793f",
+      "comment": "",
+      "command": "click",
+      "target": "id=load",
+      "targets": [
+        ["id=load", "id"],
+        ["css=#load", "css:finder"],
+        ["xpath=//input[@id='load']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d812c5fa-25a2-4448-8c44-cb94c24670a5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'National voter age 22 voter id 1')]", "xpath:innerText"]
+      ],
+      "value": "National voter age 22 voter id 1"
+    }, {
+      "id": "9e6cea07-6928-4d1e-89a9-58c1551e7b7c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Green voter age 45 voter id 2')]", "xpath:innerText"]
+      ],
+      "value": "Green voter age 45 voter id 2"
+    }, {
+      "id": "0dbf0552-2cbe-4b36-8674-beadd1707dcd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(3)",
+      "targets": [
+        ["css=li:nth-child(3)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Labour voter age 19 voter id 3')]", "xpath:innerText"]
+      ],
+      "value": "Labour voter age 19 voter id 3"
+    }, {
+      "id": "85f8a2e8-662a-42b5-a6a6-d7770751b7dd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//section[@id='app']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Votes: 3')]", "xpath:innerText"]
+      ],
+      "value": "Total Votes: 3"
+    }, {
+      "id": "f681b435-6c97-4c85-8e13-c3ccaffe7e51",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ca6c6ee9-bfca-4e1c-888f-a9d82e0b0262",
+    "name": "Feature 10 Test",
+    "commands": [{
+      "id": "1cc77901-87b8-4f1b-8c95-d3fd3f3d3fca",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a75bc6d4-ef74-4548-9ebc-575708b64a5d",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51efca4d-8f15-4fe2-acf1-509994979cf7",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "National"
+    }, {
+      "id": "b547c789-ecbe-4982-be4b-0bf0bad5ccbe",
+      "comment": "",
+      "command": "click",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0568f815-4f0e-40ee-9c11-4984fa3fada2",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "12"
+    }, {
+      "id": "ad4f2962-3af3-48a1-946c-696884807c89",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d18203c3-cced-4bd6-b7e4-7f3ad278cdf4",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "You're too young to vote, please lie about your age",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87b55cb8-e911-4f1c-9984-da2685e33f18",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='app']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Votes: 0')]", "xpath:innerText"]
+      ],
+      "value": "Total Votes: 0"
+    }, {
+      "id": "9769354a-776e-42e0-9e81-9e9ad27ffaa5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fd07cb49-7205-4235-9f0e-d71bbb3a3937",
+    "name": "Feature 11 Test",
+    "commands": [{
+      "id": "b879c74b-f94f-45e4-a164-39652ac7520a",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56534a6f-6d0c-4145-9fb1-11c10a0c4147",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f07d7aae-69fc-4990-9f9c-1dbde309097c",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Green"
+    }, {
+      "id": "ad8611b8-909e-46d4-a9d0-eeadd0e62bb8",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "18"
+    }, {
+      "id": "82d6d357-e227-4f32-85b3-0cdf99461198",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40394532-7cb7-483a-aa8a-54691d684c2b",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Act"
+    }, {
+      "id": "20fc73af-501b-4945-9418-344c02cc43a8",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "69"
+    }, {
+      "id": "90c468d3-965c-497f-94f1-d90c26cdfdc2",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "574f365e-067d-476a-8b76-8c85f69a242a",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Labor"
+    }, {
+      "id": "f21fe248-5f97-49f8-9473-ed1b2b5664b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "42"
+    }, {
+      "id": "5c8645e4-d60c-4fb7-b020-e80bbfdb0ff9",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85a45c96-feaa-43e2-90a4-94265aa8160f",
+      "comment": "",
+      "command": "click",
+      "target": "id=calc",
+      "targets": [
+        ["id=calc", "id"],
+        ["css=#calc", "css:finder"],
+        ["xpath=//input[@id='calc']", "xpath:attributes"],
+        ["xpath=//section[@id='app']/input[8]", "xpath:idRelative"],
+        ["xpath=//section/input[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38609d30-0212-4b66-84ec-6c3e12b12b0a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(17)",
+      "targets": [
+        ["css=p:nth-child(17)", "css:finder"],
+        ["xpath=//section[@id='app']/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'The average age of the voters is 43')]", "xpath:innerText"]
+      ],
+      "value": "The average age of the voters is 43"
+    }, {
+      "id": "162d9d8f-3876-4cce-93e3-ac1826cbe4ee",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "81cd04e5-0967-463b-971b-67ee2106b9b1",
+    "name": "Feature 12 Test",
+    "commands": [{
+      "id": "7a8ab17a-2b46-4afd-a429-7ac95a44752d",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4621c4d7-3f1c-422c-a4aa-0222fdad7436",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='app']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Votes: 0')]", "xpath:innerText"]
+      ],
+      "value": "Total Votes: 0"
+    }, {
+      "id": "7fd62b26-70f7-4145-96a4-72071d671f87",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a513a1ea-6b5a-4e15-8686-b00d6c22bb19",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Green"
+    }, {
+      "id": "7bf44b16-4dfb-486b-818d-8a062b8ed644",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "40"
+    }, {
+      "id": "b54dd3cb-cc9b-490e-a105-267a0f342889",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38961790-05b5-40c0-8635-c2e5fd129e21",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//section[@id='app']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Votes: 1')]", "xpath:innerText"]
+      ],
+      "value": "Total Votes: 1"
+    }, {
+      "id": "78b830cd-f7cc-4012-a7e7-7f9e182b9cda",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33a0c99a-2490-4277-a69a-c52874d7b1aa",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Labor"
+    }, {
+      "id": "691078d1-936e-416e-a4bd-768077df2c1b",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "55"
+    }, {
+      "id": "114f27db-2a8f-4fc3-aba5-1a04b8fbc2f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08aa255a-fb1d-421f-9c50-09dd2792704a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//section[@id='app']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Votes: 2')]", "xpath:innerText"]
+      ],
+      "value": "Total Votes: 2"
+    }, {
+      "id": "c69b80d5-ed21-4412-9a6b-2127eb198b46",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36a54ce9-5305-4b13-838e-272a0722c603",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Peace"
+    }, {
+      "id": "8f92d09d-0f81-49db-8312-cd5396b8e0f7",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "54"
+    }, {
+      "id": "f3a3a443-ced2-4f7f-86b8-84d8cf7552c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9146c65-2d4f-4fd3-a746-37c995e893a5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//section[@id='app']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Votes: 3')]", "xpath:innerText"]
+      ],
+      "value": "Total Votes: 3"
+    }, {
+      "id": "952f287f-9a0c-4ba5-aa6f-cedecb7df62d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "84289842-1ff8-4f82-8445-6ab636a6dabb",
+    "name": "Feature 13 Test ",
+    "commands": [{
+      "id": "6857286c-5fba-4d9a-b417-7d73faed3277",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b25522ed-fbab-4b03-a5d3-1ca22a1b447c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='app']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Votes: 0')]", "xpath:innerText"]
+      ],
+      "value": "Total Votes: 0"
+    }, {
+      "id": "f3c90cf2-d77a-4e34-b90c-86d7084d25a2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(16)",
+      "targets": [
+        ["css=p:nth-child(16)", "css:finder"],
+        ["xpath=//section[@id='app']/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'The average age of the voters is 0')]", "xpath:innerText"]
+      ],
+      "value": "The average age of the voters is 0"
+    }, {
+      "id": "a7695cfc-9d9e-4ca4-8e37-d06226c936db",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "df5d1678-7c93-406a-bcec-e42ad1b7d60d",
+    "name": "Feature 14 Test",
+    "commands": [{
+      "id": "d0b9d18b-d8df-4731-9e43-1fce4403e8d3",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77e853e1-d079-4274-ab04-ce5d833269e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2d82e45-6923-4429-8227-bd6c9d51ddc2",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "National"
+    }, {
+      "id": "1d8f5669-3c0e-4864-a6be-9c290ba22dd6",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "21"
+    }, {
+      "id": "c410aba9-1100-4a4a-9054-c73cea1ab92e",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c090233-2f61-4c13-93e1-130da8e03adc",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Green"
+    }, {
+      "id": "8c980a7b-cf92-44ad-aec9-e76610fb4f4f",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "35"
+    }, {
+      "id": "7f34133e-c7a1-4452-ba06-1c9a2c80d4f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b57e2c6-809f-4bb6-b502-c4eef3c4f4de",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Act"
+    }, {
+      "id": "07c55208-d87b-4a12-b993-fa26cf881566",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "29"
+    }, {
+      "id": "3b158682-d9f7-46ad-bbeb-57a9a124dd8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ede20e85-8792-4875-ae07-24c803f29471",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Labour"
+    }, {
+      "id": "708757a5-a665-46e4-82e9-8f3785343c4f",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "46"
+    }, {
+      "id": "bc058a91-7d1c-4904-9ade-6594a1d59b78",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bac29243-86b3-4c18-bc34-0bb506c6096d",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//section[@id='app']/input", "xpath:idRelative"],
+        ["xpath=//section/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2609e6c4-342b-4bc4-901e-1d0d884ea413",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//section[@id='app']/input", "xpath:idRelative"],
+        ["xpath=//section/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "f7fd8060-5534-4241-bab0-f85179269cce",
+      "comment": "",
+      "command": "click",
+      "target": "css=#app > input:nth-child(5)",
+      "targets": [
+        ["css=#app > input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Search']", "xpath:attributes"],
+        ["xpath=//section[@id='app']/input[2]", "xpath:idRelative"],
+        ["xpath=//section/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aec28169-4100-419a-baae-0b3df8dc202e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li",
+      "targets": [
+        ["css=li", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Act voter age 29 voter id 3')]", "xpath:innerText"]
+      ],
+      "value": "Act voter age 29 voter id 3"
+    }, {
+      "id": "9eb87dae-9f04-4cdf-930b-d6e04ea88b79",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3726b21b-1be5-45ce-abfc-8ada3cda383c",
+    "name": "Feature 15 Test",
+    "commands": [{
+      "id": "c7b628b3-e93d-4718-b477-c4e27ab106e6",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1/Election%20App/vue.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3b6e32c-a2cd-424b-aaf2-5e23713c4434",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de1a9b7e-2017-4511-b963-97123b0c0b28",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Green"
+    }, {
+      "id": "a6b44525-4d8e-4136-9fe4-afb80894c0e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "69"
+    }, {
+      "id": "b98d0950-4df8-4549-8422-5d42815a9fc2",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27887482-2f9c-4417-a2ca-6f5e9e4ec66a",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Act"
+    }, {
+      "id": "f09aac2a-4818-49d9-b499-c1530fb85b6e",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "45"
+    }, {
+      "id": "a09d19a3-8609-4631-bc91-9f0d2abbd03a",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "319d2f55-5ce7-48f6-b381-555c035b2039",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Labour"
+    }, {
+      "id": "b4f18515-2e64-481b-bfeb-0cba0b3aed8a",
+      "comment": "",
+      "command": "type",
+      "target": "id=age",
+      "targets": [
+        ["id=age", "id"],
+        ["css=#age", "css:finder"],
+        ["xpath=//input[@id='age']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "19"
+    }, {
+      "id": "dcd15540-c0b3-46bf-821b-d7b178b26709",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//div[@id='input']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efda340a-093e-42c9-86f1-5f727d05aaee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Green voter age 69 voter id 1')]", "xpath:innerText"]
+      ],
+      "value": "Green voter age 69 voter id 1"
+    }, {
+      "id": "fae419e3-4a3e-4ff5-a62e-d4dc6c903573",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Act voter age 45 voter id 2')]", "xpath:innerText"]
+      ],
+      "value": "Act voter age 45 voter id 2"
+    }, {
+      "id": "228b8a3d-d282-4127-8ca1-b31b6fdf44b7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=li:nth-child(3)",
+      "targets": [
+        ["css=li:nth-child(3)", "css:finder"],
+        ["xpath=//output[@id='output']/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Labour voter age 19 voter id 3')]", "xpath:innerText"]
+      ],
+      "value": "Labour voter age 19 voter id 3"
+    }, {
+      "id": "37216d86-2f12-4776-9258-61a6d0d6d2d0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e902a9b9-1a92-4a51-8a19-1421c920fe49",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://127.0.0.1/Election%20App/vue.html"],
+  "plugins": []
+}
